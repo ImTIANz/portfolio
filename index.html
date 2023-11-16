@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku Game</title>
+
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="sudoku.js"></script>
+    </head>
+
+    <body>
+
+<!-- GAME -->  
+        <h1>Sudoku</h1>
+        <hr>
+        <button id="instructionsButton">Instructions</button> 
+        <div id="instructionsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeInstructions">&times;</span>
+                <h2>Instructions</h2>
+                <p>
+                    Sudoku is a number puzzle game where you need to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 sub grids that compose the grid contain all of the digits from 1 to 9.
+                </p>
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Click on a number from the "Digits" section to select it.</li>
+                    <li>Click on an empty tile in the grid to place the selected number.</li>
+                    <li>If you make a mistake, the "Errors" count will increase.</li>
+                    <li>Your goal is to complete the puzzle with as few errors as possible.</li>
+                    <li>You can also record your solving time, just click the start button and the timer will start. If you want to reset the time, just click the reset button.</li>
+                    <li>Once you're done, click the check button, to check if you're answer is correct.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2 id="errors">0</h2>
+        
+        <audio id="correctSound" src="correct.mp3"></audio>
+        <audio id="incorrectSound" src="incorrect.mp3"></audio>
+
+
+        <!-- 9x9 board -->
+        <div id="board"></div>
+        <br>
+        <div id="digits">
+        </div>
+        
+        <button id="checkButton">Check</button>
+        <!-- timer -->     
+        <div id="timer">00:00</div>
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+        
+    </body>
+
+
+</html>

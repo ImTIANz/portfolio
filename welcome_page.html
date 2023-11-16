@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Space Shooter</title>
+    <link rel="stylesheet" href="welcomepage.css">
+</head>
+<body>
+    <!-- Background Music Element -->
+<audio id="backgroundMusic1" autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    <source src="song.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+    
+    <div class="welcome-page">
+        <h1>Welcome to Space Shooter</h1>
+        <button id="startButton">Start Game</button>
+        <button id="tutorialButton">Tutorial</button>
+        <button id="highScoresButton">High Scores</button>
+        <button id="settingsButton">Settings</button>
+    </div>
+
+   <!-- Tutorial Modal Section-->
+<div id="tutorialModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Tutorial: How to Play</h2>
+        <p>1. Move your mouse to control the spaceship.</p>
+        <p>2. Click to shoot bullets at enemies.</p>
+        <p>3. Collect health kits to increase your health.</p>
+        <p>4. Collect power-ups to enhance your abilities temporarily.</p>
+    </div>
+</div>
+
+    <!-- High Scores Modal Section -->
+    <div id="highScoresModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>High Scores</h2>
+            <pre></pre>
+        </div>
+    </div>
+
+    <!-- Settings Modal Section-->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Settings</h2>
+            <label for="volumeSlider">Volume:</label>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+
+    <script src="welcomepage.js"></script>
+</body>
+</html>

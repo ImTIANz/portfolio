@@ -1,0 +1,174 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #4f0d3c;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.left {
+    text-align: left;
+    line-height: 1.4; /* Add line spacing */
+}
+
+.left h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px; 
+}
+
+.left h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px; /* Add spacing between h1 and h2 */
+}
+
+.left h2:last-child {
+    font-size: 28px;
+    margin-top: 10px; /* Add spacing between h2 and h3 */
+}
+
+.left h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.glowing-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #961c8b;
+    animation: glowing 2s infinite alternate;
+    margin-top: 10px; /* Add spacing between h3 and glowing text */
+}
+
+.glowing-button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #e419d3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 75px; /* Increased margin for moving it downward */
+}
+
+.glowing-button:hover {
+    background-color: #4f0d3c;
+}
+
+.glowing-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #e419d3;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #e419d3;
+    transition: color 0.3s ease-in-out;
+}
+
+.glowing-icon:hover {
+    color: #4f0d3c;
+}
+
+.circular-image {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+    overflow: hidden;
+    margin-top: 20px; /* Add some spacing between the image and text */
+    margin-right: 20px; /* Adjust the margin to move the image closer to the left section */
+}
+
+.circular-ring {
+    border: 5px solid #961c8b;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: glowing-ring 2s infinite alternate;
+}
+
+.circular-image img {
+    width: 100%; /* Make the image cover the circular area */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+@keyframes glowing {
+    from {
+        color: #961c8b;
+        text-shadow: 0 0 5px #961c8b, 0 0 10px #961c8b, 0 0 20px #961c8b;
+    }
+    to {
+        color: #e419d3;
+        text-shadow: 0 0 10px #e419d3, 0 0 20px #e419d3, 0 0 30px #e419d3;
+    }
+}
+
+@keyframes glowing-ring {
+    from {
+        box-shadow: 0 0 10px #8b1f82;
+    }
+    to {
+        box-shadow: 0 0 20px #e419d3;
+    }
+}

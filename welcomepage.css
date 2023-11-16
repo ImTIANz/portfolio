@@ -1,0 +1,117 @@
+
+body {
+    background-image: url('BACKG.gif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    border-radius: 10px; 
+    padding: 20px;
+    text-align: center;
+    color: white; 
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px; 
+    background-color: #ff9800; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #ff5722; 
+}
+
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #292b2c; 
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px; 
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff5722; 
+    transition: color 0.3s; 
+}
+
+.close:hover {
+    color: #ff9800; 
+}
+
+#tutorialModal .modal-content {
+    background-color: #292b2c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tutorialModal .modal-title {
+    color: #ff5722;
+    font-size: 24px;
+}
+
+/* Modify the close button style for both modals */
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff5722;
+    transition: color 0.3s;
+}
+
+.modal .close:hover {
+    color: #ff9800;
+}

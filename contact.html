@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="MYINDEX.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Whether you have a question, a project in mind, or just want to say hello, we'd love to hear from you! Feel free to reach out through our social media profiles or use the contact form below. 
+            </p>
+  
+            <div class="info">
+                <div class="information">
+                    <i class="fas fa-map-marker-alt icon" style="color: #2C1B47;"></i>
+                    <p>Barangay Poblacion, Mandaluyong City</p>
+                </div>
+              <div class="information">
+                <i class="fas fa-envelope icon" style="color: #2C1B47;"></i>
+                <p>baztycatapang@gmail.com</p>
+            </div>
+            <div class="information">
+                <i class="fas fa-phone-alt icon" style="color: #2C1B47;"></i>
+                <p>09479794193</p>
+            </div>
+            
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with me :</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/bazty.resngitcatapang" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/kleincatapang" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/kleincatapang_/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/klein-zabastian-r-catapang-a243b3288/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="contact.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+<script>const inputs = document.querySelectorAll(".input");
+
+    function focusFunc() {
+      let parent = this.parentNode;
+      parent.classList.add("focus");
+    }
+    
+    function blurFunc() {
+      let parent = this.parentNode;
+      if (this.value == "") {
+        parent.classList.remove("focus");
+      }
+    }
+    
+    inputs.forEach((input) => {
+      input.addEventListener("focus", focusFunc);
+      input.addEventListener("blur", blurFunc);
+    });</script>  
+</body>
+</html>
